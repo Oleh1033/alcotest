@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Forgot Pass View-->
+        <scene sceneID="htw-l1-ahc">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPassView" id="xqD-av-Raz" customClass="ForgotPassView" customModule="Alcobattle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EcR-ye-kTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="vb6-4r-Epx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kgt-o0-aP8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KO5-19-eWt">
+                                <rect key="frame" x="16" y="8" width="343" height="195.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jid-Ep-Aex">
+                                        <rect key="frame" x="84" y="16" width="175" height="163.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="jid-Ep-Aex" secondAttribute="height" multiplier="44:41" id="z0c-AR-MOs"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jid-Ep-Aex" firstAttribute="top" secondItem="KO5-19-eWt" secondAttribute="top" constant="16" id="cVm-Xt-Reo"/>
+                                    <constraint firstAttribute="bottom" secondItem="jid-Ep-Aex" secondAttribute="bottom" constant="16" id="dfk-0Q-Sh8"/>
+                                    <constraint firstItem="jid-Ep-Aex" firstAttribute="centerX" secondItem="KO5-19-eWt" secondAttribute="centerX" id="h5n-NQ-QCX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pBb-ai-erD">
+                                <rect key="frame" x="16" y="432" width="343" height="214.5"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6L-P9-bL7">
+                                <rect key="frame" x="16" y="204" width="343" height="229"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fqx-IF-28J" customClass="FloatingInput" customModule="Alcobattle" customModuleProvider="target">
+                                        <rect key="frame" x="28" y="66" width="292" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSU-mm-RcG">
+                                        <rect key="frame" x="61" y="146" width="221" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KO5-19-eWt" firstAttribute="leading" secondItem="pBb-ai-erD" secondAttribute="leading" id="9tT-vq-Iev"/>
+                            <constraint firstItem="KO5-19-eWt" firstAttribute="trailing" secondItem="pBb-ai-erD" secondAttribute="trailing" id="HOa-Ls-3jL"/>
+                            <constraint firstItem="KO5-19-eWt" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leadingMargin" id="KBE-9P-w1x"/>
+                            <constraint firstItem="KO5-19-eWt" firstAttribute="top" secondItem="EcR-ye-kTk" secondAttribute="bottom" constant="8" symbolic="YES" id="Q0D-Qs-cC5"/>
+                            <constraint firstItem="KO5-19-eWt" firstAttribute="trailing" secondItem="z6L-P9-bL7" secondAttribute="trailing" id="QWX-4F-SKm"/>
+                            <constraint firstItem="vb6-4r-Epx" firstAttribute="top" secondItem="pBb-ai-erD" secondAttribute="bottom" constant="20.5" id="Wha-So-9v2"/>
+                            <constraint firstItem="KO5-19-eWt" firstAttribute="trailing" secondItem="kgt-o0-aP8" secondAttribute="trailingMargin" id="Xcy-0H-WTy"/>
+                            <constraint firstItem="KO5-19-eWt" firstAttribute="leading" secondItem="z6L-P9-bL7" secondAttribute="leading" id="bgx-WN-W8w"/>
+                            <constraint firstItem="vb6-4r-Epx" firstAttribute="top" secondItem="z6L-P9-bL7" secondAttribute="bottom" constant="234" id="heN-fp-TRm"/>
+                            <constraint firstItem="pBb-ai-erD" firstAttribute="top" secondItem="kgt-o0-aP8" secondAttribute="top" constant="432" id="nvd-EJ-yVQ"/>
+                            <constraint firstItem="z6L-P9-bL7" firstAttribute="top" secondItem="KO5-19-eWt" secondAttribute="bottom" constant="0.5" id="ucq-gN-qed"/>
+                            <constraint firstAttribute="bottom" secondItem="KO5-19-eWt" secondAttribute="bottom" constant="463.5" id="xoA-yg-BwI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXm-AG-NXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="356"/>
+        </scene>
+    </scenes>
+</document>
