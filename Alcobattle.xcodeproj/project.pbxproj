@@ -68,6 +68,9 @@
 		FCAEB77923CC9EC7008D7DFF /* AppLockHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAEB77823CC9EC7008D7DFF /* AppLockHelper.swift */; };
 		FCAEB77C23CCA6C0008D7DFF /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAEB77B23CCA6C0008D7DFF /* PushNotificationManager.swift */; };
 		FCAEB77E23CCA6EB008D7DFF /* PaperlessNotificationEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAEB77D23CCA6EB008D7DFF /* PaperlessNotificationEntities.swift */; };
+		FCAEB78C23CDB289008D7DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCAEB78923CDB289008D7DFF /* Assets.xcassets */; };
+		FCAEB78D23CDB289008D7DFF /* appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = FCAEB78A23CDB289008D7DFF /* appstore.png */; };
+		FCAEB78E23CDB289008D7DFF /* playstore.png in Resources */ = {isa = PBXBuildFile; fileRef = FCAEB78B23CDB289008D7DFF /* playstore.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,7 +88,7 @@
 		FC7CFC9F23180ABF0021DF5B /* String+sha1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+sha1.swift"; sourceTree = "<group>"; };
 		FC7CFCA123180B9A0021DF5B /* Dictionary+PercentEscaped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+PercentEscaped.swift"; sourceTree = "<group>"; };
 		FC7CFCA323180DB70021DF5B /* CharacterSet+QueryValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+QueryValue.swift"; sourceTree = "<group>"; };
-		FC83E1C82314252C0091B366 /* Alcobattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alcobattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC83E1C82314252C0091B366 /* AlcoBattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcoBattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC83E1CB2314252C0091B366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC83E1CD2314252C0091B366 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FC83E1D02314252C0091B366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +140,9 @@
 		FCAEB77B23CCA6C0008D7DFF /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		FCAEB77D23CCA6EB008D7DFF /* PaperlessNotificationEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperlessNotificationEntities.swift; sourceTree = "<group>"; };
 		FCAEB78023CDA445008D7DFF /* Alcobattle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Alcobattle.entitlements; sourceTree = "<group>"; };
+		FCAEB78923CDB289008D7DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCAEB78A23CDB289008D7DFF /* appstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstore.png; sourceTree = "<group>"; };
+		FCAEB78B23CDB289008D7DFF /* playstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playstore.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,7 +255,7 @@
 		FC83E1C92314252C0091B366 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC83E1C82314252C0091B366 /* Alcobattle.app */,
+				FC83E1C82314252C0091B366 /* AlcoBattle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 		FC83E1CA2314252C0091B366 /* Alcobattle */ = {
 			isa = PBXGroup;
 			children = (
+				FCAEB78823CDB289008D7DFF /* AppIconsAlcoBattle */,
 				FCAEB78023CDA445008D7DFF /* Alcobattle.entitlements */,
 				FCAEB77F23CCA8BB008D7DFF /* Source */,
 				FCAEB77423CC99CE008D7DFF /* App */,
@@ -415,6 +422,16 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		FCAEB78823CDB289008D7DFF /* AppIconsAlcoBattle */ = {
+			isa = PBXGroup;
+			children = (
+				FCAEB78923CDB289008D7DFF /* Assets.xcassets */,
+				FCAEB78A23CDB289008D7DFF /* appstore.png */,
+				FCAEB78B23CDB289008D7DFF /* playstore.png */,
+			);
+			path = AppIconsAlcoBattle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -435,7 +452,7 @@
 			);
 			name = Alcobattle;
 			productName = Alcobattle;
-			productReference = FC83E1C82314252C0091B366 /* Alcobattle.app */;
+			productReference = FC83E1C82314252C0091B366 /* AlcoBattle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -482,7 +499,10 @@
 				FC83E1D3231425300091B366 /* Assets.xcassets in Resources */,
 				FCAEB75E23CC7E14008D7DFF /* CreateAcc.storyboard in Resources */,
 				FC83E1D12314252C0091B366 /* Main.storyboard in Resources */,
+				FCAEB78C23CDB289008D7DFF /* Assets.xcassets in Resources */,
+				FCAEB78D23CDB289008D7DFF /* appstore.png in Resources */,
 				FCAEB76B23CC7F45008D7DFF /* ForgotPass.storyboard in Resources */,
+				FCAEB78E23CDB289008D7DFF /* playstore.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,8 +778,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleh.billennium.Alcobattle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.billennium.oleh.alcobattle;
+				PRODUCT_NAME = AlcoBattle;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -777,8 +797,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleh.billennium.Alcobattle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.billennium.oleh.alcobattle;
+				PRODUCT_NAME = AlcoBattle;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
