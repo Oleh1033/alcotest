@@ -13,6 +13,13 @@ final class MainTabView: PaperlessUserInterface {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func mapViewAction(_ sender: Any) {
+        router.goMapView()
+    }
+    @IBAction func historyAction(_ sender: Any) {
+        router.goToHistory()
+    }
+    
 }
 
 //MARK: - MainTabView API

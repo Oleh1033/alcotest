@@ -10,24 +10,12 @@ import UIKit
 
 enum AppModules: String, Codable, MVCModule {
     case login
-    case pinCode
-    case settings
-    case pinConfig
-    case settingsDetails
-    case configScanner
-    case scannerOnboarding
-
-    case issuesList
-    case issueDetails
-
-    case infoPaperless
-
-    case imagePreview
-
-    case paperlessActionSheet
-
-    case actionForm
-    case formSummary
+    case createAcc
+    case forgotPass
+    case mainTab
+//    case mapView
+    case history
+    case map
 }
 
 struct RedirectionModule {

@@ -1,5 +1,5 @@
  //
-//  MapDisplayData.swift
+//  HistoryDisplayData.swift
 //  Alcobattle
 //
 //  Created by Oleh on 14/01/2020.
@@ -8,16 +8,16 @@
 
 import Foundation
 
-// MARK: - MapDisplayData class
-final class MapDisplayData: DisplayData {
+// MARK: - HistoryDisplayData class
+final class HistoryDisplayData: DisplayData {
     
 }
 
-final class MapTestID {
+final class HistoryTestID {
 
 }
 
-extension MapView {
+extension HistoryView {
     override func setupID() {
 
     }

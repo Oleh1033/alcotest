@@ -8,6 +8,9 @@
 
 //MARK: - LoginRouter API
 protocol LoginRouterApi: RouterProtocol {
+    func goToCreateAcc()
+    func goToForgotPass()
+    func goToMainTab()
 }
 
 //MARK: - LoginView API

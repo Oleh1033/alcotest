@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, GIDSig
         GIDSignIn.sharedInstance().delegate = self
         
 //        window = UIWindow(frame: UIScreen.main.bounds)
+        setStyling()
         launchInitialViewController()
         return true
     }
@@ -32,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, GIDSig
     func launchInitialViewController() {
          let appModule = true
              ? AppModules.login
-             : AppModules.scannerOnboarding
+             : AppModules.createAcc
 
          let module = appModule.build()
          module.router.show(inWindow: window, embedInNavController: true, setupData: nil, makeKeyAndVisible: true)
@@ -53,5 +54,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, GIDSig
             Authorization.shared.tokenGoogle = idToken!
             print(idToken)
         }
+    }
+    
+    fileprivate func setStyling() {
+//        IQKeyboardManager.shared.enable = true
+
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17.0, weight: .semibold)
+        ]
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().barTintColor = UIColor.blue
     }
 }

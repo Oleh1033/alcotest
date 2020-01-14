@@ -14,6 +14,14 @@ final class MapRouter: Router {
 
 // MARK: - MapRouter API
 extension MapRouter: MapRouterApi {
+    func goToMainTab() {
+        let module = AppModules.mainTab.build()
+        module.router.show(from: viewController, embedInNavController: true, setupData: nil)
+    }
+    func goToHistory() {
+        let module = AppModules.history.build()
+        module.router.show(from: viewController, embedInNavController: true, setupData: nil)
+    }
 }
 
 // MARK: - Map MVC Components

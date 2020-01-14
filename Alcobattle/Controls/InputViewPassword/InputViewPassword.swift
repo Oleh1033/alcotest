@@ -47,15 +47,15 @@ class InputViewPassword: DesignableView {
 
     func setupData() {
         customInputView.hideText = true
-        let buttonTitle = LocalizationLogin.show.localized
+        let buttonTitle = "LocalizationLogin.show.localized"
         button.setTitle(buttonTitle, for: .normal)
 
     }
 
     @IBAction func showPassword(_ sender: Any) {
         let title = customInputView.hideText
-            ? LocalizationLogin.hide.localized
-            : LocalizationLogin.show.localized
+            ? "LocalizationLogin.hide.localized"
+            : "LocalizationLogin.show.localized"
 
         button.setTitle(title, for: .normal)
         customInputView.hideText = !customInputView.hideText

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View-->
+        <!--Map View-->
         <scene sceneID="htw-l1-ahc">
             <objects>
-                <viewController storyboardIdentifier="MapView" id="xqD-av-Raz" customClass="MapView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapView" id="xqD-av-Raz" customClass="MapView" customModule="AlcoBattle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EcR-ye-kTk"/>
                         <viewControllerLayoutGuide type="bottom" id="vb6-4r-Epx"/>
@@ -19,12 +18,65 @@
                     <view key="view" contentMode="scaleToFill" id="kgt-o0-aP8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6e-Y8-xPK">
+                                <rect key="frame" x="24" y="605" width="327" height="54"/>
+                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="1Lq-M7-PcA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWx-v8-Wb0">
+                                <rect key="frame" x="20" y="605" width="118" height="54"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="IlZ-98-FVx"/>
+                                    <constraint firstAttribute="width" constant="118" id="zp6-Eb-ZMj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="mainTabAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="Igz-CU-1i3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjo-6S-dUX">
+                                <rect key="frame" x="237" y="605" width="118" height="54"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="0En-DL-7F5"/>
+                                    <constraint firstAttribute="width" constant="118" id="gzl-vq-fDX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="historyAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="cRv-Me-JTJ"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ouX-AN-jTR">
+                                <rect key="frame" x="20" y="8" width="335" height="573"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="v6e-Y8-xPK" secondAttribute="trailing" constant="8" id="2fL-rU-7cQ"/>
+                            <constraint firstItem="vWx-v8-Wb0" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" constant="20" symbolic="YES" id="5CZ-zN-csl"/>
+                            <constraint firstItem="vb6-4r-Epx" firstAttribute="top" secondItem="vWx-v8-Wb0" secondAttribute="bottom" constant="8" symbolic="YES" id="8a6-Um-MWj"/>
+                            <constraint firstItem="ouX-AN-jTR" firstAttribute="top" secondItem="EcR-ye-kTk" secondAttribute="bottom" constant="8" symbolic="YES" id="AKR-dV-ybw"/>
+                            <constraint firstItem="v6e-Y8-xPK" firstAttribute="top" secondItem="ouX-AN-jTR" secondAttribute="bottom" constant="24" id="aGg-lt-oKu"/>
+                            <constraint firstItem="vb6-4r-Epx" firstAttribute="top" secondItem="v6e-Y8-xPK" secondAttribute="bottom" constant="8" symbolic="YES" id="bCD-GS-L6p"/>
+                            <constraint firstItem="v6e-Y8-xPK" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leadingMargin" constant="8" id="bp1-LQ-rK8"/>
+                            <constraint firstAttribute="trailing" secondItem="ouX-AN-jTR" secondAttribute="trailing" constant="20" symbolic="YES" id="dGN-Ij-lRn"/>
+                            <constraint firstAttribute="trailing" secondItem="Hjo-6S-dUX" secondAttribute="trailing" constant="20" symbolic="YES" id="isH-1A-CBW"/>
+                            <constraint firstItem="ouX-AN-jTR" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" constant="20" symbolic="YES" id="mhk-un-IHx"/>
+                            <constraint firstItem="vb6-4r-Epx" firstAttribute="top" secondItem="Hjo-6S-dUX" secondAttribute="bottom" constant="8" symbolic="YES" id="pE4-gE-jTc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="ouX-AN-jTR" id="LZV-Bh-WWV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXm-AG-NXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295" y="356"/>
+            <point key="canvasLocation" x="293.60000000000002" y="355.7721139430285"/>
         </scene>
     </scenes>
 </document>

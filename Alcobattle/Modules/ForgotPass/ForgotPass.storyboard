@@ -10,7 +10,7 @@
         <!--Forgot Pass View-->
         <scene sceneID="htw-l1-ahc">
             <objects>
-                <viewController storyboardIdentifier="ForgotPassView" id="xqD-av-Raz" customClass="ForgotPassView" customModule="Alcobattle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgotPassView" id="xqD-av-Raz" customClass="ForgotPassView" customModule="AlcoBattle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EcR-ye-kTk"/>
                         <viewControllerLayoutGuide type="bottom" id="vb6-4r-Epx"/>
@@ -22,14 +22,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KO5-19-eWt">
                                 <rect key="frame" x="16" y="8" width="343" height="195.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jid-Ep-Aex">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2029473" translatesAutoresizingMaskIntoConstraints="NO" id="jid-Ep-Aex">
                                         <rect key="frame" x="84" y="16" width="175" height="163.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="jid-Ep-Aex" secondAttribute="height" multiplier="44:41" id="z0c-AR-MOs"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="jid-Ep-Aex" firstAttribute="top" secondItem="KO5-19-eWt" secondAttribute="top" constant="16" id="cVm-Xt-Reo"/>
                                     <constraint firstAttribute="bottom" secondItem="jid-Ep-Aex" secondAttribute="bottom" constant="16" id="dfk-0Q-Sh8"/>
@@ -38,12 +37,11 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pBb-ai-erD">
                                 <rect key="frame" x="16" y="432" width="343" height="214.5"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6L-P9-bL7">
                                 <rect key="frame" x="16" y="204" width="343" height="229"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fqx-IF-28J" customClass="FloatingInput" customModule="Alcobattle" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fqx-IF-28J" customClass="FloatingInput" customModule="AlcoBattle" customModuleProvider="target">
                                         <rect key="frame" x="28" y="66" width="292" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -54,9 +52,12 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="buttonSendAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="hlP-dn-ZcJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -75,10 +76,17 @@
                             <constraint firstAttribute="bottom" secondItem="KO5-19-eWt" secondAttribute="bottom" constant="463.5" id="xoA-yg-BwI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonSend" destination="cSU-mm-RcG" id="Pgc-xT-mjl"/>
+                        <outlet property="inputEmailView" destination="Fqx-IF-28J" id="7Q8-4N-y2z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXm-AG-NXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="295" y="356"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="2029473" width="512" height="512"/>
+    </resources>
 </document>

@@ -14,6 +14,18 @@ final class LoginRouter: Router {
 
 // MARK: - LoginRouter API
 extension LoginRouter: LoginRouterApi {
+    func goToCreateAcc() {
+        let module = AppModules.createAcc.build()
+        module.router.show(from: viewController, embedInNavController: true, setupData: nil)
+    }
+    func goToForgotPass() {
+        let module = AppModules.forgotPass.build()
+        module.router.show(from: viewController, embedInNavController: true, setupData: nil)
+    }
+    func goToMainTab() {
+        let module = AppModules.mainTab.build()
+        module.router.show(from: viewController, embedInNavController: true, setupData: nil)
+    }
 }
 
 // MARK: - Login MVC Components

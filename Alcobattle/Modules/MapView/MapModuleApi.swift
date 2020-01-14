@@ -8,6 +8,8 @@
 
 //MARK: - MapRouter API
 protocol MapRouterApi: RouterProtocol {
+    func goToMainTab()
+    func goToHistory()
 }
 
 //MARK: - MapView API

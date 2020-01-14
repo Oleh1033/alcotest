@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Tab View-->
+        <!--History View-->
         <scene sceneID="htw-l1-ahc">
             <objects>
-                <viewController storyboardIdentifier="MainTabView" id="xqD-av-Raz" customClass="MainTabView" customModule="AlcoBattle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryView" id="xqD-av-Raz" customClass="HistoryView" customModule="AlcoBattle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EcR-ye-kTk"/>
                         <viewControllerLayoutGuide type="bottom" id="vb6-4r-Epx"/>
@@ -19,28 +19,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSk-aT-yH9">
-                                <rect key="frame" x="0.0" y="613" width="118" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfO-0J-CLR">
+                                <rect key="frame" x="257" y="613" width="118" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gap-6b-dMQ">
-                                <rect key="frame" x="128" y="613" width="118" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bV-XQ-a9a">
+                                <rect key="frame" x="131" y="613" width="118" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="mapViewAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="bRR-WS-Czc"/>
+                                    <action selector="mapViewAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="snS-Nu-405"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmu-ND-4H9">
-                                <rect key="frame" x="254" y="613" width="118" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwa-Q0-H6B">
+                                <rect key="frame" x="0.0" y="613" width="118" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="historyAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="hdr-Me-drh"/>
+                                    <action selector="mainTabAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="kLJ-qe-Q72"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXm-AG-NXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293.60000000000002" y="355.7721139430285"/>
+            <point key="canvasLocation" x="295" y="356"/>
         </scene>
     </scenes>
 </document>

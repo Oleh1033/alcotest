@@ -10,9 +10,18 @@ import UIKit
 
 //MARK: ForgotPassView Class
 final class ForgotPassView: PaperlessUserInterface {
+    
+    @IBOutlet weak var inputEmailView: FloatingInput!
+    @IBOutlet weak var buttonSend: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func buttonSendAction(_ sender: Any) {
+        
+        print(inputEmailView.text)
+    }
+    
 }
 
 //MARK: - ForgotPassView API

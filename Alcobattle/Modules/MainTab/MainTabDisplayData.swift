@@ -18,11 +18,11 @@ final class MainTabTestID {
 }
 
 extension MainTabView {
-    func setupID() {
+    override func setupID() {
 
     }
 
-    func setupTranslations() {
+    override func setupTranslations() {
 
     }
 }

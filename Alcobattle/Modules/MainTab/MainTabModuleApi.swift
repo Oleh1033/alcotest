@@ -8,6 +8,8 @@
 
 //MARK: - MainTabRouter API
 protocol MainTabRouterApi: RouterProtocol {
+    func goToHistory()
+    func goMapView()
 }
 
 //MARK: - MainTabView API
