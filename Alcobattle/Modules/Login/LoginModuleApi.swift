@@ -19,4 +19,5 @@ protocol LoginViewApi: PaperlessUserInterfaceProtocol {
 
 //MARK: - LoginViewModel API
 protocol LoginViewModelApi: ViewModelProtocol {
+    func loginRequest(_ userCredentials: UserCredentials)
 }

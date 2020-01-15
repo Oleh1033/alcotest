@@ -10,4 +10,5 @@ import Foundation
 
 class ConstantUrl {
     static let baseUrlApi = "https://a238c516.ngrok.io"
+    static let baseUrl = "https://alcoapitest.azurewebsites.net"
 }

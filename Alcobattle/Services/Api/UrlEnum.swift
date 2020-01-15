@@ -9,8 +9,11 @@
 import Foundation
 
 enum UrlEnum : String {
-    case login                 = "/login"
-    case userTest              = "/user/test"
-    case userLogin             = "/user/login"
-    case userRegister          = "/user/register"
+    case login                 = "/api/login"
+    case createUser            = "/api/createUser"
+    case resetPassword         = "/api/resetPassword"
+    case loginWithGoogleToken  = "/api/loginWithGoogleToken"
+    
+    case userLogin             = "/api/sendData"
+    case getNearlestUsers      = "/api/getNearlestUsers"
 }

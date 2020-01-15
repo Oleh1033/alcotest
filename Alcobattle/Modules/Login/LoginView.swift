@@ -25,6 +25,9 @@ final class LoginView: PaperlessUserInterface {
     @IBAction func loginAction(_ sender: Any) {
         print("loginAction")
         router.goToMainTab()
+        
+        
+        viewModel.loginRequest(UserCredentials(email: inputLoginView.text!, password: inputPasswordView.text!))
     }
     @IBAction func createAccAction(_ sender: Any) {
         print("createAccAction")

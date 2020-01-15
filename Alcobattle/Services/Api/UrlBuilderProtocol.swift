@@ -13,7 +13,7 @@ class UrlBuilder {
     static let shared = UrlBuilder()
     
     func buildStringUrl(endpoint: UrlEnum) -> String {
-        let url = "\(ConstantUrl.baseUrlApi)\(endpoint.rawValue)"
+        let url = "\(ConstantUrl.baseUrl)\(endpoint.rawValue)"
         return url
     }
 }
