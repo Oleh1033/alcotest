@@ -23,6 +23,6 @@ extension LoginView {
     }
 
     override func setupTranslations() {
-
+        loginButton.accessibilityIdentifier = "loginButton"
     }
 }

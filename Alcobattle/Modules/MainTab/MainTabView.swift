@@ -12,6 +12,7 @@ import UIKit
 final class MainTabView: PaperlessUserInterface {
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.accessibilityIdentifier = "onboardingView"
     }
     @IBAction func mapViewAction(_ sender: Any) {
         router.goMapView()

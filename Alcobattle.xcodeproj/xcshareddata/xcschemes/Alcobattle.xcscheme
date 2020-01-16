@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FC83E1C72314252C0091B366"
-               BuildableName = "Alcobattle.app"
+               BuildableName = "AlcoBattle.app"
                BlueprintName = "Alcobattle"
                ReferencedContainer = "container:Alcobattle.xcodeproj">
             </BuildableReference>
@@ -27,19 +27,37 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC83E1C72314252C0091B366"
-            BuildableName = "Alcobattle.app"
+            BuildableName = "AlcoBattle.app"
             BlueprintName = "Alcobattle"
             ReferencedContainer = "container:Alcobattle.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FCAEB7CB23D09578008D7DFF"
+               BuildableName = "AlcoBattleTests.xctest"
+               BlueprintName = "AlcoBattleTests"
+               ReferencedContainer = "container:Alcobattle.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FCAEB7D923D09687008D7DFF"
+               BuildableName = "AlcoBattleUITests.xctest"
+               BlueprintName = "AlcoBattleUITests"
+               ReferencedContainer = "container:Alcobattle.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -56,13 +74,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC83E1C72314252C0091B366"
-            BuildableName = "Alcobattle.app"
+            BuildableName = "AlcoBattle.app"
             BlueprintName = "Alcobattle"
             ReferencedContainer = "container:Alcobattle.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
       <LocationScenarioReference
          identifier = "London, England"
          referenceType = "1">
@@ -79,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC83E1C72314252C0091B366"
-            BuildableName = "Alcobattle.app"
+            BuildableName = "AlcoBattle.app"
             BlueprintName = "Alcobattle"
             ReferencedContainer = "container:Alcobattle.xcodeproj">
          </BuildableReference>

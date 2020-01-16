@@ -95,7 +95,27 @@
 		FCAEB7C323CDEC34008D7DFF /* HistoryModuleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAEB7BD23CDEC34008D7DFF /* HistoryModuleApi.swift */; };
 		FCAEB7C423CDEC34008D7DFF /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAEB7BE23CDEC34008D7DFF /* HistoryView.swift */; };
 		FCAEB7C523CDEC34008D7DFF /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAEB7BF23CDEC34008D7DFF /* HistoryViewModel.swift */; };
+		FCAEB7C723CF5DA3008D7DFF /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAEB7C623CF5DA2008D7DFF /* UserDefaultsKey.swift */; };
+		FCAEB7CF23D09579008D7DFF /* AlcoBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAEB7CE23D09579008D7DFF /* AlcoBattleTests.swift */; };
+		FCAEB7DD23D09687008D7DFF /* AlcoBattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAEB7DC23D09687008D7DFF /* AlcoBattleUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCAEB7D123D09579008D7DFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC83E1C02314252C0091B366 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC83E1C72314252C0091B366;
+			remoteInfo = Alcobattle;
+		};
+		FCAEB7DF23D09687008D7DFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC83E1C02314252C0091B366 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC83E1C72314252C0091B366;
+			remoteInfo = Alcobattle;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4028FC40A91661BE254EBDF3 /* Pods_Alcobattle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alcobattle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +212,13 @@
 		FCAEB7BD23CDEC34008D7DFF /* HistoryModuleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModuleApi.swift; sourceTree = "<group>"; };
 		FCAEB7BE23CDEC34008D7DFF /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		FCAEB7BF23CDEC34008D7DFF /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		FCAEB7C623CF5DA2008D7DFF /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
+		FCAEB7CC23D09578008D7DFF /* AlcoBattleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcoBattleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAEB7CE23D09579008D7DFF /* AlcoBattleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoBattleTests.swift; sourceTree = "<group>"; };
+		FCAEB7D023D09579008D7DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCAEB7DA23D09687008D7DFF /* AlcoBattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcoBattleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAEB7DC23D09687008D7DFF /* AlcoBattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoBattleUITests.swift; sourceTree = "<group>"; };
+		FCAEB7DE23D09687008D7DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +227,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				977BFB563F10439592843C31 /* Pods_Alcobattle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAEB7C923D09578008D7DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAEB7D723D09687008D7DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +339,8 @@
 			isa = PBXGroup;
 			children = (
 				FC83E1CA2314252C0091B366 /* Alcobattle */,
+				FCAEB7CD23D09579008D7DFF /* AlcoBattleTests */,
+				FCAEB7DB23D09687008D7DFF /* AlcoBattleUITests */,
 				FC83E1C92314252C0091B366 /* Products */,
 				0349EB141EC1BB208B9BEB59 /* Pods */,
 				23F13BF95F21E1825EA6DA59 /* Frameworks */,
@@ -308,6 +351,8 @@
 			isa = PBXGroup;
 			children = (
 				FC83E1C82314252C0091B366 /* AlcoBattle.app */,
+				FCAEB7CC23D09578008D7DFF /* AlcoBattleTests.xctest */,
+				FCAEB7DA23D09687008D7DFF /* AlcoBattleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -462,6 +507,7 @@
 			children = (
 				FCAEB73B23CC7A08008D7DFF /* AppStructure */,
 				FCAEB77623CC9E7D008D7DFF /* ImagePicker.swift */,
+				FCAEB7C623CF5DA2008D7DFF /* UserDefaultsKey.swift */,
 				FCAEB79B23CDC09F008D7DFF /* Logger.swift */,
 				FCAEB77823CC9EC7008D7DFF /* AppLockHelper.swift */,
 			);
@@ -538,6 +584,24 @@
 			path = History;
 			sourceTree = "<group>";
 		};
+		FCAEB7CD23D09579008D7DFF /* AlcoBattleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCAEB7CE23D09579008D7DFF /* AlcoBattleTests.swift */,
+				FCAEB7D023D09579008D7DFF /* Info.plist */,
+			);
+			path = AlcoBattleTests;
+			sourceTree = "<group>";
+		};
+		FCAEB7DB23D09687008D7DFF /* AlcoBattleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCAEB7DC23D09687008D7DFF /* AlcoBattleUITests.swift */,
+				FCAEB7DE23D09687008D7DFF /* Info.plist */,
+			);
+			path = AlcoBattleUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -561,18 +625,62 @@
 			productReference = FC83E1C82314252C0091B366 /* AlcoBattle.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FCAEB7CB23D09578008D7DFF /* AlcoBattleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCAEB7D323D09579008D7DFF /* Build configuration list for PBXNativeTarget "AlcoBattleTests" */;
+			buildPhases = (
+				FCAEB7C823D09578008D7DFF /* Sources */,
+				FCAEB7C923D09578008D7DFF /* Frameworks */,
+				FCAEB7CA23D09578008D7DFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCAEB7D223D09579008D7DFF /* PBXTargetDependency */,
+			);
+			name = AlcoBattleTests;
+			productName = AlcoBattleTests;
+			productReference = FCAEB7CC23D09578008D7DFF /* AlcoBattleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCAEB7D923D09687008D7DFF /* AlcoBattleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCAEB7E123D09687008D7DFF /* Build configuration list for PBXNativeTarget "AlcoBattleUITests" */;
+			buildPhases = (
+				FCAEB7D623D09687008D7DFF /* Sources */,
+				FCAEB7D723D09687008D7DFF /* Frameworks */,
+				FCAEB7D823D09687008D7DFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCAEB7E023D09687008D7DFF /* PBXTargetDependency */,
+			);
+			name = AlcoBattleUITests;
+			productName = AlcoBattleUITests;
+			productReference = FCAEB7DA23D09687008D7DFF /* AlcoBattleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		FC83E1C02314252C0091B366 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1030;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Oleh;
 				TargetAttributes = {
 					FC83E1C72314252C0091B366 = {
 						CreatedOnToolsVersion = 10.3;
+					};
+					FCAEB7CB23D09578008D7DFF = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = FC83E1C72314252C0091B366;
+					};
+					FCAEB7D923D09687008D7DFF = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = FC83E1C72314252C0091B366;
 					};
 				};
 			};
@@ -590,6 +698,8 @@
 			projectRoot = "";
 			targets = (
 				FC83E1C72314252C0091B366 /* Alcobattle */,
+				FCAEB7CB23D09578008D7DFF /* AlcoBattleTests */,
+				FCAEB7D923D09687008D7DFF /* AlcoBattleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -614,6 +724,20 @@
 				FCAEB78D23CDB289008D7DFF /* appstore.png in Resources */,
 				FCAEB76B23CC7F45008D7DFF /* ForgotPass.storyboard in Resources */,
 				FCAEB78E23CDB289008D7DFF /* playstore.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAEB7CA23D09578008D7DFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAEB7D823D09687008D7DFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,6 +832,7 @@
 				FC83E1E22315A05F0091B366 /* FloatingInput.swift in Sources */,
 				FCAEB79C23CDC09F008D7DFF /* Logger.swift in Sources */,
 				FCAEB75423CC7BD5008D7DFF /* LoginModuleApi.swift in Sources */,
+				FCAEB7C723CF5DA3008D7DFF /* UserDefaultsKey.swift in Sources */,
 				FC6CFB4D2322504A00C824CE /* GoogleAuth.swift in Sources */,
 				FCAEB7C123CDEC34008D7DFF /* HistoryDisplayData.swift in Sources */,
 				FCAEB7B623CDCB0A008D7DFF /* MapView.swift in Sources */,
@@ -758,7 +883,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FCAEB7C823D09578008D7DFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAEB7CF23D09579008D7DFF /* AlcoBattleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAEB7D623D09687008D7DFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAEB7DD23D09687008D7DFF /* AlcoBattleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCAEB7D223D09579008D7DFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC83E1C72314252C0091B366 /* Alcobattle */;
+			targetProxy = FCAEB7D123D09579008D7DFF /* PBXContainerItemProxy */;
+		};
+		FCAEB7E023D09687008D7DFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC83E1C72314252C0091B366 /* Alcobattle */;
+			targetProxy = FCAEB7DF23D09687008D7DFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FC83E1CF2314252C0091B366 /* Main.storyboard */ = {
@@ -936,6 +1090,84 @@
 			};
 			name = Release;
 		};
+		FCAEB7D423D09579008D7DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlcoBattleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleh.billennium.AlcoBattleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlcoBattle.app/AlcoBattle";
+			};
+			name = Debug;
+		};
+		FCAEB7D523D09579008D7DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlcoBattleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleh.billennium.AlcoBattleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlcoBattle.app/AlcoBattle";
+			};
+			name = Release;
+		};
+		FCAEB7E223D09687008D7DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlcoBattleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleh.billennium.AlcoBattleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alcobattle;
+			};
+			name = Debug;
+		};
+		FCAEB7E323D09687008D7DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlcoBattleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleh.billennium.AlcoBattleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alcobattle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -953,6 +1185,24 @@
 			buildConfigurations = (
 				FC83E1DB231425300091B366 /* Debug */,
 				FC83E1DC231425300091B366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCAEB7D323D09579008D7DFF /* Build configuration list for PBXNativeTarget "AlcoBattleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAEB7D423D09579008D7DFF /* Debug */,
+				FCAEB7D523D09579008D7DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCAEB7E123D09687008D7DFF /* Build configuration list for PBXNativeTarget "AlcoBattleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAEB7E223D09687008D7DFF /* Debug */,
+				FCAEB7E323D09687008D7DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
